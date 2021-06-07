@@ -1,0 +1,73 @@
+@import "../../global.scss";
+
+.div-resultado {
+	padding: 16px 16px 0 16px;
+	.div-resultado-inner {
+		border-bottom: solid 1px $gray-EEE;
+		display: flex;
+		flex-direction: column;
+		padding-bottom: 16px;
+		cursor: pointer;
+		.img-resultado {
+			width: 180px;
+			height: 180px;
+			border-radius: 4px;
+		}
+		.div-detalle {
+			margin-left: 0px;
+			display: flex;
+			flex: 1;
+			flex-direction: column;
+			.div-description {
+				flex: 2;
+				.p-price {
+					font-size: 24px;
+					margin-block-start: 16px;
+					margin-block-end: 16px;
+					.img-icon {
+						cursor: pointer;
+						margin-left: 5px;
+					}
+					sub,
+					sup {
+						font-size: 10px;
+					}
+				}
+				.p-description {
+					font-size: 18px;
+					margin-block-start: 16px;
+					margin-block-end: 16px;
+				}
+			}
+			.div-ciudad {
+				flex: 1;
+				.p-ciudad {
+					font-size: 12px;
+					margin-block-start: 24px;
+					margin-block-end: 8px;
+					color: $gray-999;
+				}
+			}
+			@media only screen and (min-width: $breakpoint-tablet) {
+				& {
+					flex-direction: row;
+				}
+			}
+			@media only screen and (min-width: $breakpoint-mini) {
+				& {
+					margin-left: 16px;
+				}
+			}
+		}
+		@media only screen and (min-width: $breakpoint-mini) {
+			& {
+				flex-direction: row;
+			}
+		}
+	}
+	&:last-child {
+		.div-resultado-inner {
+			border-bottom-width: 0;
+		}
+	}
+}

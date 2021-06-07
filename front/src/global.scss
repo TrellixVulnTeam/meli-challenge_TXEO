@@ -1,0 +1,32 @@
+$yellow-brand: #ffe600;
+$gray-333: #333333;
+$gray-666: #666666;
+$gray-999: #999999;
+$gray-EEE: #eeeeee;
+$blue-light: #3483fa;
+
+$breakpoint-tablet: 993px;
+$breakpoint-mobile: 601px;
+$breakpoint-mini: 401px;
+
+.container {
+	margin: 0 auto;
+	max-width: 1200px;
+	width: 90%;
+	@media only screen and (min-width: $breakpoint-tablet) {
+		width: 70%;
+	}
+	@media only screen and (min-width: $breakpoint-mobile) {
+		width: 85%;
+	}
+}
+
+body{
+	margin: 0;
+	background-color: $gray-EEE;
+	font-family: Arial, sans-serif;
+	.div-container{
+		background-color: #FFFFFF;
+		margin-bottom: 32px;
+	}
+}

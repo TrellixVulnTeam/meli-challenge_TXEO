@@ -1,0 +1,63 @@
+@import "../../global.scss";
+
+header {
+	background-color: $yellow-brand;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	.container {
+		position: relative;
+		display: flex;
+		align-items: center;
+		.header-image {
+			text-indent: -9999px;
+			background-repeat: no-repeat;
+			width: 53px;
+			height: 36px;
+			background-image: url("../../assets/imgs/Logo_ML.png");
+			background-size: 53px 36px;
+		}
+		.form-search {
+            width: calc(100% - 119px);
+            margin-left: 15px;
+            @media only screen and (min-width: $breakpoint-mobile) {
+                & {
+                    width: calc(100% - 129px);
+                    margin-left: 25px;
+                }
+            }
+			.input-search {
+				height: 36px;
+                width: 100%;
+				background-color: #ffffff;
+				border-width: 0;
+				font-size: 18px;
+				padding:0 0 0 15px;
+				margin: 0;
+				border-top-left-radius: 4px;
+				border-bottom-left-radius: 4px;
+				&::placeholder {
+					color: $gray-999;
+					opacity: 1;
+				}
+				&:-ms-input-placeholder {
+					color: $gray-999;
+				}
+				&::-ms-input-placeholder {
+					color: $gray-999;
+				}
+			}
+			.input-button {
+				position: absolute;
+				right: 0;
+				top: 0;
+				width: 36px;
+				height: 36px;
+				background-color: $gray-EEE;
+				border-width: 0;
+				border-bottom-right-radius: 4px;
+				border-top-right-radius: 4px;
+				cursor: pointer;
+			}
+		}
+	}
+}
